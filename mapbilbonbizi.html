@@ -1,0 +1,1248 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://rawgithub.com/lvoogdt/Leaflet.awesome-markers/2.0/develop/dist/leaflet.awesome-markers.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://rawgit.com/lvoogdt/Leaflet.awesome-markers/2.0/develop/dist/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_236d06e834b5457f9ce9bf827057865d {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_236d06e834b5457f9ce9bf827057865d" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_236d06e834b5457f9ce9bf827057865d = L.map('map_236d06e834b5457f9ce9bf827057865d', {
+                                           center:[43.281575,-2.9620189999999997],
+                                           zoom: 12,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_7f2b1f51ba094c4eac0169d4108e9827 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_236d06e834b5457f9ce9bf827057865d);
+
+        
+        
+            
+
+            var marker_d22795dd0c0142baa887504d18f6db3a = L.marker(
+                [43.281575,-2.9620189999999997],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_e7d2cae3bc854763bca779f50d69f405 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d22795dd0c0142baa887504d18f6db3a.setIcon(icon_e7d2cae3bc854763bca779f50d69f405);
+            
+        
+            
+            var popup_6462e3c8e34f41efa0c70e743da58362 = L.popup({maxWidth: '300'});
+
+            
+                var html_df8994e0d8e9460985b77b3e562fbf32 = $('         <div id="html_df8994e0d8e9460985b77b3e562fbf32"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 2 bicis disponibles</div>                 ')[0];
+                popup_6462e3c8e34f41efa0c70e743da58362.setContent(html_df8994e0d8e9460985b77b3e562fbf32);
+            
+
+            marker_d22795dd0c0142baa887504d18f6db3a.bindPopup(popup_6462e3c8e34f41efa0c70e743da58362);
+
+            
+        
+        
+            
+
+            var marker_867c1350bd7341e68f8ba5b12e3e3c6a = L.marker(
+                [43.269818779081106,-2.9492293763905764],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_50ddfbf506134b219f6af2ad4cf18b1e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_867c1350bd7341e68f8ba5b12e3e3c6a.setIcon(icon_50ddfbf506134b219f6af2ad4cf18b1e);
+            
+        
+            
+            var popup_8d6ac7b099ca4388856166950f666e21 = L.popup({maxWidth: '300'});
+
+            
+                var html_4aebb4900ef44799985ffd4e93da3f16 = $('         <div id="html_4aebb4900ef44799985ffd4e93da3f16"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 8 bicis disponibles</div>                 ')[0];
+                popup_8d6ac7b099ca4388856166950f666e21.setContent(html_4aebb4900ef44799985ffd4e93da3f16);
+            
+
+            marker_867c1350bd7341e68f8ba5b12e3e3c6a.bindPopup(popup_8d6ac7b099ca4388856166950f666e21);
+
+            
+        
+        
+            
+
+            var marker_563a2651c8bd4c0e9b3dcbac722dfd59 = L.marker(
+                [43.264402000000004,-2.922888],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_c1c92fe05e3f4a38a2fed06a9af01f54 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_563a2651c8bd4c0e9b3dcbac722dfd59.setIcon(icon_c1c92fe05e3f4a38a2fed06a9af01f54);
+            
+        
+            
+            var popup_9524a9c6a6a746db89d255ab90ebaa4e = L.popup({maxWidth: '300'});
+
+            
+                var html_96a23233f46b40aa8eebb132c7e5cc65 = $('         <div id="html_96a23233f46b40aa8eebb132c7e5cc65"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 11 bicis disponibles</div>                 ')[0];
+                popup_9524a9c6a6a746db89d255ab90ebaa4e.setContent(html_96a23233f46b40aa8eebb132c7e5cc65);
+            
+
+            marker_563a2651c8bd4c0e9b3dcbac722dfd59.bindPopup(popup_9524a9c6a6a746db89d255ab90ebaa4e);
+
+            
+        
+        
+            
+
+            var marker_90617f247d0c4cdea3509f96ae3cc00d = L.marker(
+                [43.25951800681651,-2.924382984638214],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_097705b2710b41a39063fab912212418 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_90617f247d0c4cdea3509f96ae3cc00d.setIcon(icon_097705b2710b41a39063fab912212418);
+            
+        
+            
+            var popup_5bfae54739f2400aa8a74819ee907822 = L.popup({maxWidth: '300'});
+
+            
+                var html_15e50e9a424a431f81e6abfca298981f = $('         <div id="html_15e50e9a424a431f81e6abfca298981f"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 9 bicis disponibles</div>                 ')[0];
+                popup_5bfae54739f2400aa8a74819ee907822.setContent(html_15e50e9a424a431f81e6abfca298981f);
+            
+
+            marker_90617f247d0c4cdea3509f96ae3cc00d.bindPopup(popup_5bfae54739f2400aa8a74819ee907822);
+
+            
+        
+        
+            
+
+            var marker_2c0bf49e6f204e80be66c62835b55172 = L.marker(
+                [43.25016522780061,-2.930786171928048],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_383af88e808741568a787854ce5ee2ca = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2c0bf49e6f204e80be66c62835b55172.setIcon(icon_383af88e808741568a787854ce5ee2ca);
+            
+        
+            
+            var popup_44a32a5e10bf4429a45f9aab532f1e82 = L.popup({maxWidth: '300'});
+
+            
+                var html_6f9532fe1ef6444db02cc3083b9a4cbe = $('         <div id="html_6f9532fe1ef6444db02cc3083b9a4cbe"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 6 bicis disponibles</div>                 ')[0];
+                popup_44a32a5e10bf4429a45f9aab532f1e82.setContent(html_6f9532fe1ef6444db02cc3083b9a4cbe);
+            
+
+            marker_2c0bf49e6f204e80be66c62835b55172.bindPopup(popup_44a32a5e10bf4429a45f9aab532f1e82);
+
+            
+        
+        
+            
+
+            var marker_abadd134a6c1413e959ae51067b613dd = L.marker(
+                [43.25221803970636,-2.9455229826271534],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_9a4cedd027a5423d90c52d4a4447b7ea = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_abadd134a6c1413e959ae51067b613dd.setIcon(icon_9a4cedd027a5423d90c52d4a4447b7ea);
+            
+        
+            
+            var popup_491d456fe2104a4197c3bf5449f5aa14 = L.popup({maxWidth: '300'});
+
+            
+                var html_d4c81ffbbaa14cde82ab3d341090ebca = $('         <div id="html_d4c81ffbbaa14cde82ab3d341090ebca"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 6 bicis disponibles</div>                 ')[0];
+                popup_491d456fe2104a4197c3bf5449f5aa14.setContent(html_d4c81ffbbaa14cde82ab3d341090ebca);
+            
+
+            marker_abadd134a6c1413e959ae51067b613dd.bindPopup(popup_491d456fe2104a4197c3bf5449f5aa14);
+
+            
+        
+        
+            
+
+            var marker_9ef76cdb3d1e4866b854287403321fd3 = L.marker(
+                [43.258031,-2.943918],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_335ac0418f9e4c3a9604bc449da84b09 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9ef76cdb3d1e4866b854287403321fd3.setIcon(icon_335ac0418f9e4c3a9604bc449da84b09);
+            
+        
+            
+            var popup_8bb5d233dc8c4e70ad72d3de9169ea57 = L.popup({maxWidth: '300'});
+
+            
+                var html_a3b3f45aa7ce4f4fac05affb33f7d822 = $('         <div id="html_a3b3f45aa7ce4f4fac05affb33f7d822"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 2 bicis disponibles</div>                 ')[0];
+                popup_8bb5d233dc8c4e70ad72d3de9169ea57.setContent(html_a3b3f45aa7ce4f4fac05affb33f7d822);
+            
+
+            marker_9ef76cdb3d1e4866b854287403321fd3.bindPopup(popup_8bb5d233dc8c4e70ad72d3de9169ea57);
+
+            
+        
+        
+            
+
+            var marker_dab81a4daf104c70999375ea8319dba7 = L.marker(
+                [43.261878853663795,-2.949357703328133],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_bd9a60e7ffa94b62a34dc46277927caf = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dab81a4daf104c70999375ea8319dba7.setIcon(icon_bd9a60e7ffa94b62a34dc46277927caf);
+            
+        
+            
+            var popup_397e6cc33c264b6aa6d54d9f0c657251 = L.popup({maxWidth: '300'});
+
+            
+                var html_9dbd8643751a4943b8e107db29ebb14f = $('         <div id="html_9dbd8643751a4943b8e107db29ebb14f"                 style="width: 100.0%; height: 100.0%;">                 baja disponibilidad 0 bicis disponibles</div>                 ')[0];
+                popup_397e6cc33c264b6aa6d54d9f0c657251.setContent(html_9dbd8643751a4943b8e107db29ebb14f);
+            
+
+            marker_dab81a4daf104c70999375ea8319dba7.bindPopup(popup_397e6cc33c264b6aa6d54d9f0c657251);
+
+            
+        
+        
+            
+
+            var marker_a42fa0492a2a4f1b8bdf2c23405f816a = L.marker(
+                [43.27518554404378,-2.974011227488518],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_57d01f8c359f4f2a8f6b308a6fa62cd4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a42fa0492a2a4f1b8bdf2c23405f816a.setIcon(icon_57d01f8c359f4f2a8f6b308a6fa62cd4);
+            
+        
+            
+            var popup_6fd240b80d2947d8a2e611357447cf37 = L.popup({maxWidth: '300'});
+
+            
+                var html_5ab8dde4ad4e4d9c887016fefe123525 = $('         <div id="html_5ab8dde4ad4e4d9c887016fefe123525"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 4 bicis disponibles</div>                 ')[0];
+                popup_6fd240b80d2947d8a2e611357447cf37.setContent(html_5ab8dde4ad4e4d9c887016fefe123525);
+            
+
+            marker_a42fa0492a2a4f1b8bdf2c23405f816a.bindPopup(popup_6fd240b80d2947d8a2e611357447cf37);
+
+            
+        
+        
+            
+
+            var marker_6523af6861094f4d8c6acdaad67f1097 = L.marker(
+                [43.26138013042509,-2.933957800269127],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_253530c11d774afb9b1797cc9cba0515 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6523af6861094f4d8c6acdaad67f1097.setIcon(icon_253530c11d774afb9b1797cc9cba0515);
+            
+        
+            
+            var popup_1240cebbcf3b4565aa06c9c431fc3a51 = L.popup({maxWidth: '300'});
+
+            
+                var html_7c8d48332f5848be8bdbfbe25309f0cb = $('         <div id="html_7c8d48332f5848be8bdbfbe25309f0cb"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 4 bicis disponibles</div>                 ')[0];
+                popup_1240cebbcf3b4565aa06c9c431fc3a51.setContent(html_7c8d48332f5848be8bdbfbe25309f0cb);
+            
+
+            marker_6523af6861094f4d8c6acdaad67f1097.bindPopup(popup_1240cebbcf3b4565aa06c9c431fc3a51);
+
+            
+        
+        
+            
+
+            var marker_f252734892a64b7b9d3d0be026033f37 = L.marker(
+                [43.26581323519349,-2.945251492783427],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_79311e7e97f540a1ac6ef8d21efe04ec = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f252734892a64b7b9d3d0be026033f37.setIcon(icon_79311e7e97f540a1ac6ef8d21efe04ec);
+            
+        
+            
+            var popup_e102c55e21df44c19257a0311a797231 = L.popup({maxWidth: '300'});
+
+            
+                var html_30d931a4b2c8438aacdd7bf8dfddd1d8 = $('         <div id="html_30d931a4b2c8438aacdd7bf8dfddd1d8"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 7 bicis disponibles</div>                 ')[0];
+                popup_e102c55e21df44c19257a0311a797231.setContent(html_30d931a4b2c8438aacdd7bf8dfddd1d8);
+            
+
+            marker_f252734892a64b7b9d3d0be026033f37.bindPopup(popup_e102c55e21df44c19257a0311a797231);
+
+            
+        
+        
+            
+
+            var marker_30481589183c4668bc7ff0aa47297bfe = L.marker(
+                [43.260344,-2.9400470000000003],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_56e8d5769cce412db5867800480056e9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_30481589183c4668bc7ff0aa47297bfe.setIcon(icon_56e8d5769cce412db5867800480056e9);
+            
+        
+            
+            var popup_f1edd7e6217848e194ab92651cce64ec = L.popup({maxWidth: '300'});
+
+            
+                var html_a6f22a1dc565418d85a4c95b5cb4a821 = $('         <div id="html_a6f22a1dc565418d85a4c95b5cb4a821"                 style="width: 100.0%; height: 100.0%;">                 baja disponibilidad 0 bicis disponibles</div>                 ')[0];
+                popup_f1edd7e6217848e194ab92651cce64ec.setContent(html_a6f22a1dc565418d85a4c95b5cb4a821);
+            
+
+            marker_30481589183c4668bc7ff0aa47297bfe.bindPopup(popup_f1edd7e6217848e194ab92651cce64ec);
+
+            
+        
+        
+            
+
+            var marker_be1e19d0347c4068becbf4a06a0d4260 = L.marker(
+                [43.2672551739961,-2.939507877454162],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_139369ecf08e4a8b9655124b18d5b973 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_be1e19d0347c4068becbf4a06a0d4260.setIcon(icon_139369ecf08e4a8b9655124b18d5b973);
+            
+        
+            
+            var popup_54af8fc281cb40ca8faf56236a2ef80c = L.popup({maxWidth: '300'});
+
+            
+                var html_68fa00cf0adb43418df693b2139b4fe9 = $('         <div id="html_68fa00cf0adb43418df693b2139b4fe9"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 6 bicis disponibles</div>                 ')[0];
+                popup_54af8fc281cb40ca8faf56236a2ef80c.setContent(html_68fa00cf0adb43418df693b2139b4fe9);
+            
+
+            marker_be1e19d0347c4068becbf4a06a0d4260.bindPopup(popup_54af8fc281cb40ca8faf56236a2ef80c);
+
+            
+        
+        
+            
+
+            var marker_aadf8f64617b468ba83c6aef0a43429c = L.marker(
+                [43.24341570027173,-2.9251992143690586],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_2c14a360b17841a19ea96a9c41231817 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_aadf8f64617b468ba83c6aef0a43429c.setIcon(icon_2c14a360b17841a19ea96a9c41231817);
+            
+        
+            
+            var popup_1309f23c30c54a458e482aa6f657b4de = L.popup({maxWidth: '300'});
+
+            
+                var html_941618a57e7b4192968da7284281a790 = $('         <div id="html_941618a57e7b4192968da7284281a790"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 6 bicis disponibles</div>                 ')[0];
+                popup_1309f23c30c54a458e482aa6f657b4de.setContent(html_941618a57e7b4192968da7284281a790);
+            
+
+            marker_aadf8f64617b468ba83c6aef0a43429c.bindPopup(popup_1309f23c30c54a458e482aa6f657b4de);
+
+            
+        
+        
+            
+
+            var marker_6005b026ad634ed49cb33ed841795156 = L.marker(
+                [43.25298548676073,-2.9196956567466263],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_b01b8144e14a46e2850554309b46df20 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6005b026ad634ed49cb33ed841795156.setIcon(icon_b01b8144e14a46e2850554309b46df20);
+            
+        
+            
+            var popup_f380cf621f7448b3b3626021adbad368 = L.popup({maxWidth: '300'});
+
+            
+                var html_d2319fe7949b4e53b2118098f555d1d2 = $('         <div id="html_d2319fe7949b4e53b2118098f555d1d2"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 3 bicis disponibles</div>                 ')[0];
+                popup_f380cf621f7448b3b3626021adbad368.setContent(html_d2319fe7949b4e53b2118098f555d1d2);
+            
+
+            marker_6005b026ad634ed49cb33ed841795156.bindPopup(popup_f380cf621f7448b3b3626021adbad368);
+
+            
+        
+        
+            
+
+            var marker_3842b8fdd69242d8b71a9ec304a538a8 = L.marker(
+                [43.271675,-2.944672],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_c1e68c190bbb4b569ce8dcc73cc08403 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3842b8fdd69242d8b71a9ec304a538a8.setIcon(icon_c1e68c190bbb4b569ce8dcc73cc08403);
+            
+        
+            
+            var popup_ded7ba1169ec4562b1a6d300e0da5589 = L.popup({maxWidth: '300'});
+
+            
+                var html_ca6da6613b304d0bbba37db607939f4c = $('         <div id="html_ca6da6613b304d0bbba37db607939f4c"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 1 bicis disponibles</div>                 ')[0];
+                popup_ded7ba1169ec4562b1a6d300e0da5589.setContent(html_ca6da6613b304d0bbba37db607939f4c);
+            
+
+            marker_3842b8fdd69242d8b71a9ec304a538a8.bindPopup(popup_ded7ba1169ec4562b1a6d300e0da5589);
+
+            
+        
+        
+            
+
+            var marker_edfdaf93bf374f6eaae1034b877e8f15 = L.marker(
+                [43.25404194183648,-2.9126812610775232],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_14525a6c99e143d9a31c52c94edae528 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_edfdaf93bf374f6eaae1034b877e8f15.setIcon(icon_14525a6c99e143d9a31c52c94edae528);
+            
+        
+            
+            var popup_b5b0984857214be6847aa2b96e3714b7 = L.popup({maxWidth: '300'});
+
+            
+                var html_ccf6c1fed7b84baebfa4913f8c18cea0 = $('         <div id="html_ccf6c1fed7b84baebfa4913f8c18cea0"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 11 bicis disponibles</div>                 ')[0];
+                popup_b5b0984857214be6847aa2b96e3714b7.setContent(html_ccf6c1fed7b84baebfa4913f8c18cea0);
+            
+
+            marker_edfdaf93bf374f6eaae1034b877e8f15.bindPopup(popup_b5b0984857214be6847aa2b96e3714b7);
+
+            
+        
+        
+            
+
+            var marker_98952c9029114764bcfd550387d938cf = L.marker(
+                [43.24805634096265,-2.9072287492454048],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_456b5dc75f8848f1af9161d3f9c8c4eb = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_98952c9029114764bcfd550387d938cf.setIcon(icon_456b5dc75f8848f1af9161d3f9c8c4eb);
+            
+        
+            
+            var popup_83ac6890b1ae4394ab41295f9a06f25c = L.popup({maxWidth: '300'});
+
+            
+                var html_a5eb13533d964c44aa0494499d8daa92 = $('         <div id="html_a5eb13533d964c44aa0494499d8daa92"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 6 bicis disponibles</div>                 ')[0];
+                popup_83ac6890b1ae4394ab41295f9a06f25c.setContent(html_a5eb13533d964c44aa0494499d8daa92);
+            
+
+            marker_98952c9029114764bcfd550387d938cf.bindPopup(popup_83ac6890b1ae4394ab41295f9a06f25c);
+
+            
+        
+        
+            
+
+            var marker_01ea13afbf8e40b08b2112dd1c52bc66 = L.marker(
+                [43.259429,-2.900386],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_3404d5450175466590d706fd91f733b0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_01ea13afbf8e40b08b2112dd1c52bc66.setIcon(icon_3404d5450175466590d706fd91f733b0);
+            
+        
+            
+            var popup_f1617b97b8da423095182fa1fb0a636a = L.popup({maxWidth: '300'});
+
+            
+                var html_19718a76b884487b974b0929ec568be1 = $('         <div id="html_19718a76b884487b974b0929ec568be1"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 1 bicis disponibles</div>                 ')[0];
+                popup_f1617b97b8da423095182fa1fb0a636a.setContent(html_19718a76b884487b974b0929ec568be1);
+            
+
+            marker_01ea13afbf8e40b08b2112dd1c52bc66.bindPopup(popup_f1617b97b8da423095182fa1fb0a636a);
+
+            
+        
+        
+            
+
+            var marker_fc09b714b52e437095c2e6c97ee68b98 = L.marker(
+                [43.26557777777778,-2.9607583333333336],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_1ac1682df1414bd6a2d497dac64ff5ba = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fc09b714b52e437095c2e6c97ee68b98.setIcon(icon_1ac1682df1414bd6a2d497dac64ff5ba);
+            
+        
+            
+            var popup_279aed29a8184a2381b0b8f06926d74c = L.popup({maxWidth: '300'});
+
+            
+                var html_4f8ad05a611449ea98ab9961bdbf14b5 = $('         <div id="html_4f8ad05a611449ea98ab9961bdbf14b5"                 style="width: 100.0%; height: 100.0%;">                 baja disponibilidad 0 bicis disponibles</div>                 ')[0];
+                popup_279aed29a8184a2381b0b8f06926d74c.setContent(html_4f8ad05a611449ea98ab9961bdbf14b5);
+            
+
+            marker_fc09b714b52e437095c2e6c97ee68b98.bindPopup(popup_279aed29a8184a2381b0b8f06926d74c);
+
+            
+        
+        
+            
+
+            var marker_0a22428fdb4c41e1952199afbc366060 = L.marker(
+                [43.27433333333333,-2.9583861111111114],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_7014ad60e26243098c33d51e2967f10f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0a22428fdb4c41e1952199afbc366060.setIcon(icon_7014ad60e26243098c33d51e2967f10f);
+            
+        
+            
+            var popup_4bab28ee5eb34a95919dcd297fc00de8 = L.popup({maxWidth: '300'});
+
+            
+                var html_305b0b5288134ef892ae54407178cc9e = $('         <div id="html_305b0b5288134ef892ae54407178cc9e"                 style="width: 100.0%; height: 100.0%;">                 baja disponibilidad 0 bicis disponibles</div>                 ')[0];
+                popup_4bab28ee5eb34a95919dcd297fc00de8.setContent(html_305b0b5288134ef892ae54407178cc9e);
+            
+
+            marker_0a22428fdb4c41e1952199afbc366060.bindPopup(popup_4bab28ee5eb34a95919dcd297fc00de8);
+
+            
+        
+        
+            
+
+            var marker_e01aac219a824a65821d45411d4ff2a5 = L.marker(
+                [43.264261111111104,-2.932786111111111],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_c3f4b79ed1e24ae8bd46793f2186e49c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e01aac219a824a65821d45411d4ff2a5.setIcon(icon_c3f4b79ed1e24ae8bd46793f2186e49c);
+            
+        
+            
+            var popup_c300cde9c831405db222a0f63b219ba6 = L.popup({maxWidth: '300'});
+
+            
+                var html_5a8dd3902d33427784fe7ca119c920d4 = $('         <div id="html_5a8dd3902d33427784fe7ca119c920d4"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 6 bicis disponibles</div>                 ')[0];
+                popup_c300cde9c831405db222a0f63b219ba6.setContent(html_5a8dd3902d33427784fe7ca119c920d4);
+            
+
+            marker_e01aac219a824a65821d45411d4ff2a5.bindPopup(popup_c300cde9c831405db222a0f63b219ba6);
+
+            
+        
+        
+            
+
+            var marker_673d7244a05b4fc19f0b0afed8a78143 = L.marker(
+                [43.257931,-2.935669],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_6fb47ed8c32141b2981a22c967e456a3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_673d7244a05b4fc19f0b0afed8a78143.setIcon(icon_6fb47ed8c32141b2981a22c967e456a3);
+            
+        
+            
+            var popup_c67447312b244a829b0423095946c4b0 = L.popup({maxWidth: '300'});
+
+            
+                var html_b72780ec866e42c08a7a0d24b40a7c42 = $('         <div id="html_b72780ec866e42c08a7a0d24b40a7c42"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 1 bicis disponibles</div>                 ')[0];
+                popup_c67447312b244a829b0423095946c4b0.setContent(html_b72780ec866e42c08a7a0d24b40a7c42);
+            
+
+            marker_673d7244a05b4fc19f0b0afed8a78143.bindPopup(popup_c67447312b244a829b0423095946c4b0);
+
+            
+        
+        
+            
+
+            var marker_e9ca7d03322d4281875fd30cce5de9ae = L.marker(
+                [43.26106666666666,-2.9168944444444445],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_1f7a1306f8e943b4915fb7de7aa80ea7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e9ca7d03322d4281875fd30cce5de9ae.setIcon(icon_1f7a1306f8e943b4915fb7de7aa80ea7);
+            
+        
+            
+            var popup_ff20a9ebdccc47bb891d7b7098c6c1c7 = L.popup({maxWidth: '300'});
+
+            
+                var html_b3b1b7375ad44ac5b43ef0baa9f4825a = $('         <div id="html_b3b1b7375ad44ac5b43ef0baa9f4825a"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 7 bicis disponibles</div>                 ')[0];
+                popup_ff20a9ebdccc47bb891d7b7098c6c1c7.setContent(html_b3b1b7375ad44ac5b43ef0baa9f4825a);
+            
+
+            marker_e9ca7d03322d4281875fd30cce5de9ae.bindPopup(popup_ff20a9ebdccc47bb891d7b7098c6c1c7);
+
+            
+        
+        
+            
+
+            var marker_81d39d2353cc410db70e23f1fc23be44 = L.marker(
+                [43.256858333333334,-2.907227777777777],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_d75a7c3c76de41c493c4d96b1150d0fd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_81d39d2353cc410db70e23f1fc23be44.setIcon(icon_d75a7c3c76de41c493c4d96b1150d0fd);
+            
+        
+            
+            var popup_c5c1ceb0439e41b7af2629f273f09206 = L.popup({maxWidth: '300'});
+
+            
+                var html_d371dd296b46403ab7120012f1edfca1 = $('         <div id="html_d371dd296b46403ab7120012f1edfca1"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 7 bicis disponibles</div>                 ')[0];
+                popup_c5c1ceb0439e41b7af2629f273f09206.setContent(html_d371dd296b46403ab7120012f1edfca1);
+            
+
+            marker_81d39d2353cc410db70e23f1fc23be44.bindPopup(popup_c5c1ceb0439e41b7af2629f273f09206);
+
+            
+        
+        
+            
+
+            var marker_98dbf4b41c464a2285dec351b7a898a7 = L.marker(
+                [43.260859,-2.926981],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_2446f5eb4f66422f8c6e838e7be456dc = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_98dbf4b41c464a2285dec351b7a898a7.setIcon(icon_2446f5eb4f66422f8c6e838e7be456dc);
+            
+        
+            
+            var popup_7242ba136be1471ba858604c42db3932 = L.popup({maxWidth: '300'});
+
+            
+                var html_2136f18633784b5a9c339b5738d57458 = $('         <div id="html_2136f18633784b5a9c339b5738d57458"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 3 bicis disponibles</div>                 ')[0];
+                popup_7242ba136be1471ba858604c42db3932.setContent(html_2136f18633784b5a9c339b5738d57458);
+            
+
+            marker_98dbf4b41c464a2285dec351b7a898a7.bindPopup(popup_7242ba136be1471ba858604c42db3932);
+
+            
+        
+        
+            
+
+            var marker_c9d538273a154090bc9f9d7ed1d8660e = L.marker(
+                [43.249299,-2.94647],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_ef14f5e9ce2f47608d4e4b7cf25108ec = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c9d538273a154090bc9f9d7ed1d8660e.setIcon(icon_ef14f5e9ce2f47608d4e4b7cf25108ec);
+            
+        
+            
+            var popup_44c7b3765d1d4cb8aa565af5ac9fd779 = L.popup({maxWidth: '300'});
+
+            
+                var html_de912115a673462a86e888721289ca17 = $('         <div id="html_de912115a673462a86e888721289ca17"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 9 bicis disponibles</div>                 ')[0];
+                popup_44c7b3765d1d4cb8aa565af5ac9fd779.setContent(html_de912115a673462a86e888721289ca17);
+            
+
+            marker_c9d538273a154090bc9f9d7ed1d8660e.bindPopup(popup_44c7b3765d1d4cb8aa565af5ac9fd779);
+
+            
+        
+        
+            
+
+            var marker_3760585e960341a8a93ec71250f76a16 = L.marker(
+                [43.266855555555544,-2.9270944444444438],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_2ab95d51a61947b7902355ca9b49f380 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3760585e960341a8a93ec71250f76a16.setIcon(icon_2ab95d51a61947b7902355ca9b49f380);
+            
+        
+            
+            var popup_2f899164eb834a5c894b7348c4bd39d1 = L.popup({maxWidth: '300'});
+
+            
+                var html_b6553142f2b84c7c89b9c1fc9e277387 = $('         <div id="html_b6553142f2b84c7c89b9c1fc9e277387"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 3 bicis disponibles</div>                 ')[0];
+                popup_2f899164eb834a5c894b7348c4bd39d1.setContent(html_b6553142f2b84c7c89b9c1fc9e277387);
+            
+
+            marker_3760585e960341a8a93ec71250f76a16.bindPopup(popup_2f899164eb834a5c894b7348c4bd39d1);
+
+            
+        
+        
+            
+
+            var marker_da20e9a2cb1949069b8be87d37ecf3f4 = L.marker(
+                [43.25401666666666,-2.938486111111111],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_315e945476d942f38f88fbca26f842a3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_da20e9a2cb1949069b8be87d37ecf3f4.setIcon(icon_315e945476d942f38f88fbca26f842a3);
+            
+        
+            
+            var popup_f31fd048bc034474bc80edfde2fd68ed = L.popup({maxWidth: '300'});
+
+            
+                var html_c6732fdb247d4b57a03793d951c90278 = $('         <div id="html_c6732fdb247d4b57a03793d951c90278"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 6 bicis disponibles</div>                 ')[0];
+                popup_f31fd048bc034474bc80edfde2fd68ed.setContent(html_c6732fdb247d4b57a03793d951c90278);
+            
+
+            marker_da20e9a2cb1949069b8be87d37ecf3f4.bindPopup(popup_f31fd048bc034474bc80edfde2fd68ed);
+
+            
+        
+        
+            
+
+            var marker_d998b6d544454750b80d0d70cf9d8a73 = L.marker(
+                [43.255964,-2.927757],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_236d06e834b5457f9ce9bf827057865d);
+            
+        
+            
+
+                var icon_a5e7270e0dba42d09fc133de49f7173d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d998b6d544454750b80d0d70cf9d8a73.setIcon(icon_a5e7270e0dba42d09fc133de49f7173d);
+            
+        
+            
+            var popup_91c0c9761fcf42bdb0009d3b7a07a258 = L.popup({maxWidth: '300'});
+
+            
+                var html_f3e63a4538cb48b1a444907f85a0c799 = $('         <div id="html_f3e63a4538cb48b1a444907f85a0c799"                 style="width: 100.0%; height: 100.0%;">                 muy alta disponibilidad 1 bicis disponibles</div>                 ')[0];
+                popup_91c0c9761fcf42bdb0009d3b7a07a258.setContent(html_f3e63a4538cb48b1a444907f85a0c799);
+            
+
+            marker_d998b6d544454750b80d0d70cf9d8a73.bindPopup(popup_91c0c9761fcf42bdb0009d3b7a07a258);
+
+            
+        
+        
+        
+        </script>
+        
